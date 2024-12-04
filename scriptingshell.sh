@@ -9,6 +9,7 @@ cd /var/www/dep-info
 touch index.html
 chmod 770 index.html
 echo "<h1>Bienvenue dans le département Informatique</h1>" > index.html
+python3 -m http.server 3001
 cd ..
 
 #deuxième département
@@ -18,6 +19,7 @@ cd /var/www/dep-manage
 touch index.html
 chmod 770 index.html
 echo "<h1>Bienvenue dans le département management</h1>" > index.html
+python3 -m http.server 3002
 cd ..
 
 #troisième département
@@ -27,4 +29,5 @@ cd /var/www/dep-mark
 touch index.html 
 chmod 770 index.html
 echo "<h1>Bienvenue dans le département marketing</h1>" > index.html
+python3 -m http.server 3003
 cd ..
